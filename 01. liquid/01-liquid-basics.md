@@ -84,3 +84,26 @@ Used when we want to execute Liquid logic.
 Easy way to remember
 {{ }}  → Show something
 {% %}  → Do something
+
+
+=========================================================
+
+Q4. What is a Liquid filter?
+
+A filter modifies the value before it is displayed.
+
+Example:
+
+{{ product.title | upcase }}
+
+If the title is:
+
+Classic T-Shirt
+
+The output becomes:
+
+CLASSIC T-SHIRT
+
+Multiple filters can also be chained:
+
+{{ product.title | downcase | capitalize }}
