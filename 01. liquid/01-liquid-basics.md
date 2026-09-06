@@ -1,9 +1,9 @@
 # Shopify Liquid Basics
 
-- Short Answer
+- Short Answer: 
 Liquid is Shopify's templating language. It is used to access Shopify store data and generate dynamic HTML.
 
-- Detailed Answer
+- Detailed Answer: 
 Liquid runs on Shopify's server and allows a theme to work with dynamic store data such as products, collections, customers, cart information, and shop settings.
 
 For example:
@@ -17,3 +17,48 @@ Example
 <p>{{ product.price | money }}</p>
 
 If the product is "Classic T-Shirt", Liquid generates HTML containing that product's actual information.
+
+
+================================================================================================================
+
+Q2. What are the three main parts of Liquid?
+
+Liquid consists mainly of:
+
+1. Objects
+2. Tags
+3. Filters
+
+Objects
+
+Objects are used to access Shopify data.
+
+{{ product.title }}
+{{ product.price }}
+{{ shop.name }}
+Tags
+
+Tags control the logic or behavior of Liquid.
+
+{% if product.available %}
+  Available
+{% endif %}
+
+Common tags include:
+
+if
+unless
+for
+assign
+capture
+render
+case
+Filters
+
+Filters modify the output of an object.
+
+{{ product.title | upcase }}
+
+Another example:
+
+{{ product.price | money }}
