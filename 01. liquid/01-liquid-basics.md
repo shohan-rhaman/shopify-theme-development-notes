@@ -36,6 +36,7 @@ Objects are used to access Shopify data.
 {{ product.title }}
 {{ product.price }}
 {{ shop.name }}
+
 Tags
 
 Tags control the logic or behavior of Liquid.
@@ -46,14 +47,14 @@ Tags control the logic or behavior of Liquid.
 
 Common tags include:
 
-if
-unless
-for
-assign
-capture
-render
-case
-Filters
+- if
+- unless
+- for
+- assign
+- capture
+- render
+- case
+- Filters
 
 Filters modify the output of an object.
 
@@ -62,3 +63,24 @@ Filters modify the output of an object.
 Another example:
 
 {{ product.price | money }}
+
+==========================================================================
+
+Q3. What is the difference between {{ }} and {% %}?
+
+{{ }} — Output
+
+Used when we want to display a value.
+
+{{ product.title }}
+{% %} — Logic
+
+Used when we want to execute Liquid logic.
+
+{% if product.available %}
+  Available
+{% endif %}
+
+Easy way to remember
+{{ }}  → Show something
+{% %}  → Do something
