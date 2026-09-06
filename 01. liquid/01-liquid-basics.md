@@ -191,3 +191,31 @@ Handles browser interaction.
 Simple rule
 - Liquid      → Shopify data + server-side rendering
 - JavaScript  → Browser interaction + dynamic behavior
+
+
+==========================================================================
+
+Interview Answer
+
+If an interviewer asks:
+
+"What is Liquid?"
+
+A strong answer is:
+
+Liquid is Shopify's server-side templating language. I use it to access Shopify objects such as products, collections, cart and shop data, and generate dynamic HTML. Liquid also provides tags for logic and filters for transforming output.
+
+Practice
+
+Before moving to the next topic, you should be able to:
+
+- Explain Liquid
+- Explain Objects
+- Explain Tags
+- Explain Filters
+- Explain {{ }}
+- Explain {% %}
+- Create variables with assign
+- Create if/else conditions
+- Create for loops
+- Explain Liquid vs JavaScript
