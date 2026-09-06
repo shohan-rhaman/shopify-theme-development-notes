@@ -19,7 +19,7 @@ Example
 If the product is "Classic T-Shirt", Liquid generates HTML containing that product's actual information.
 
 
-================================================================================================================
+==================================================================
 
 Q2. What are the three main parts of Liquid?
 
@@ -86,7 +86,7 @@ Easy way to remember
 {% %}  → Do something
 
 
-=========================================================
+===========================================================================
 
 Q4. What is a Liquid filter?
 
@@ -145,3 +145,49 @@ Sale badges
 Conditional sections
 Customer-specific content
 Variant states
+
+
+===================================================================
+
+Q7. What is a Liquid loop?
+
+A loop allows us to repeat code for multiple items.
+
+Example:
+
+{% for product in collection.products %}
+  <h2>{{ product.title }}</h2>
+{% endfor %}
+
+If a collection contains 10 products, the loop generates the product markup 10 times.
+
+====================================================================
+
+Q8. What is the difference between Liquid and JavaScript?
+Liquid
+
+Liquid runs on Shopify's server and is mainly used to retrieve Shopify data and generate HTML.
+
+JavaScript
+
+JavaScript runs in the customer's browser and is used for interactive behavior.
+
+For example:
+
+Liquid:
+
+{{ product.title }}
+
+Gets the product title.
+
+JavaScript:
+
+button.addEventListener("click", function() {
+  // interaction
+});
+
+Handles browser interaction.
+
+Simple rule
+- Liquid      → Shopify data + server-side rendering
+- JavaScript  → Browser interaction + dynamic behavior
