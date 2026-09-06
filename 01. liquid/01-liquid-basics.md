@@ -107,3 +107,41 @@ CLASSIC T-SHIRT
 Multiple filters can also be chained:
 
 {{ product.title | downcase | capitalize }}
+
+
+=====================================================================
+
+Q5. What is a Liquid variable?
+
+A variable stores a value that can be reused.
+
+{% assign product_title = product.title %}
+
+Now we can use:
+
+{{ product_title }}
+
+Another example:
+
+{% assign featured_collection = collections['featured'] %}
+
+
+======================================================================
+
+Q6. What is an if statement in Liquid?
+
+It allows us to execute code based on a condition.
+
+{% if product.available %}
+  <button>Add to Cart</button>
+{% else %}
+  <button disabled>Sold Out</button>
+{% endif %}
+
+This is commonly used in Shopify themes for:
+
+Product availability
+Sale badges
+Conditional sections
+Customer-specific content
+Variant states
